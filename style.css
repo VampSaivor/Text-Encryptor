@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fuente-Inter: 'Inter', sans-serif;
+
+    --color-primario: #f3f5fc ;
+    --color-secundario: #0a3871;
+    --color-terciario: crimson;
+    --color-septenario: #495057;
+    --color-cuaternario: #f6f6f6 ;
+    --color-quinario: bisque;
+    --color-senario: #d8dfe8;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color:var(--color-primario);
+    font-family: var(--fuente-Inter);
+    font-size: 1rem;
+    line-height: 90%;
+    overflow-y: hidden;
+    }
+    
+.logo{
+    padding-top: 3%;
+    margin-left: 3%;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    margin-left: 8%;
+    gap: 5%;
+
+}
+
+.textareaUno {
+    background-image: url(Assets/fondoCosmico.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    margin-left: 6.7rem;
+    height: 60%;
+    padding: 1.5rem;
+    border: inset;
+    border-color: var(--color-secundario);
+    color: var(--color-secundario);
+    text-transform: lowercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7); 
+    font-size: 2.1rem;
+}
+
+::placeholder { color: var(--color-secundario);}
+
+.textareaUno:focus,
+.textareaDos:focus{
+        outline: none;
+    } 
+    
+.textareaDos{
+    background: var(--color-cuaternario);
+    background-image: url(Assets/HackCat.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4); 
+    color: var(--color-secundario);
+    margin-left: 7rem;
+    padding: 0.5rem;
+    width: 25rem;
+    font-family: var(--fuente-Inter);
+    font-size: 2.1rem;
+    height:28.75rem; 
+}
+
+
+.divBotones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    margin-left: 3rem;
+}
+
+.botonesComunes{
+ 
+    border-radius: 24px;
+    border: 2px solid var(--color-secundario);
+    cursor: pointer;
+    font-family: var(--fuente-Inter);
+    height: 4.6875rem;
+    margin-top: 7%;
+    width: 18rem;
+    font-size: 2rem;
+}
+
+.botonesComunes:hover {
+    background-color: var(--color-quinario);
+    color: var(--color-terciario);
+    border: 2px solid var(--color-secundario);
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.informacion{
+        color: var(--color-septenario);
+        font-size: 1rem;
+        margin-left: 6.7rem;
+        margin-top: 1rem;
+    }
+
+.botonEncriptarTexto{
+    background-color: var(--color-secundario);
+    color: var(--color-senario);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    margin-left: 4rem;
+    margin-top: 3rem;
+
+}
+
+.botonDesencriptarTexto{
+    background-color: var(--color-senario);
+    color: var(--color-secundario);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    margin-left: 1.5rem;
+
+
+    
+}
+
+
+.botonCopiador{
+        background-color: var(--color-senario);
+        color: var(--color-senario);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
+        margin-left: 11rem;
+        margin-top: 0.6rem;
+        font-size: xx-large;
+        } 
+    
+ .botonCopiador:hover{
+        transform: scale(1.1);
+    }
+
+footer {
+        text-align: end;
+        bottom: 0.2rem;
+        width: 90%;
+        opacity: 0.7;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        
+    }
+
+.textoRodapie{
+        font-size: 0.8rem;
+         }
+
+
+
+
+
+@media (max-width:1400px){
+    
+.container{
+        margin-left: -10rem;
+}
+.logo{
+        padding-top: 9%;
+        margin-left: 2%;
+        width: 18%;
+}
+main{
+        flex-direction: column;
+        
+}
+.textareaUno {
+        border: none;
+        margin-top: 10%;
+        margin-bottom: 35%; 
+        margin-left: 10rem;
+}   
+.informacion{
+        margin-left: 8rem;
+        margin-top: 0.5rem;
+}   
+.divBotones{
+        margin-left: 4rem;
+        margin-bottom: 10%;
+        margin-top: -2rem;
+        gap: 0%;
+}   
+.textareaDos{
+           
+        margin-left: 0.1rem;
+        margin-top: -2rem;
+        padding: 3rem;
+        width: 32rem;
+        font-size: 1.5rem;
+        height:2rem;
+
+}  
+ .textoRodapie{
+    font-size: 0.8rem;
+     }
+
+}
+
+@media (max-width :500px)
+
+{
+
+
+    .container{
+        margin :auto;
+        margin-left: -8rem;
+    }
+
+    .logo{
+        padding-top: 9%;
+        margin-left: 1%;
+        width: 28%;
+    }
+
+        .textareaUno {
+
+            /*background-image: none;*/
+            margin-bottom: 10%; 
+            margin-top: 10%;
+            font-size: medium;
+                     
+    }
+
+    .informacion{
+        height:1rem;
+        margin-left: 30%;
+        margin-top: 2rem;
+        font-size: small;
+    }  
+
+    .divBotones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: 3%;
+        margin-top: 1%;
+        
+    }
+       
+    .botonEncriptarTexto{
+        font-size: small;
+        height: 3rem;
+        margin-left: 30%;
+        
+    }
+  
+    .botonDesencriptarTexto{
+        font-size: small;
+        height: 3rem;
+        margin-left: 30%;
+    }
+
+   
+    .textareaDos{
+        margin-left: -10%;
+        width: 50%;
+        font-size: small;
+        height:2rem;
+        box-shadow: none;
+    }
+
+    
+    .botonCopiador{
+    margin: auto;
+    width: 90%;
+    font-size: small;
+    height: 3rem;
+
+    
+    }
+  
+}

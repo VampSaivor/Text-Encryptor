@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EncriptadorTextoPipePuerta</title>
+</head>
+
+<body>
+    <header>
+        <img  class="logo" src="Assets/Logo2.png" alt="logo alura">
+    </header>
+
+    <main class="presentacionResponsiva">
+            <section class="container">      
+                <textarea class ="textareaUno" cols="30" rows="10" id="campo1" placeholder=""></textarea>
+            
+                <div>
+                    <h5 class="informacion" id="subtituloInfo"></h5>
+                </div>
+            
+                <div class="divBotones">        
+                    <button onclick="funcionEncriptadora();" class="botonesComunes botonEncriptarTexto">𝕰𝖓𝖈𝖗𝖎𝖕𝖙𝖆𝖗</button>
+                    <button onclick="funcionDesencriptadora();" class="botonesComunes botonDesencriptarTexto">𝕯𝖊𝖘𝖊𝖓𝖈𝖗𝖎𝖕𝖙𝖆𝖗</button>
+                </div>
+            </section>
+
+            <section class="pincho">
+                <textarea class = "textareaDos" cols="20" rows="10" id="campo2" placeholder=""></textarea>
+            
+                <div>
+                    <h6 class="informacion" id="subtituloInfo"></h6>
+                
+                <button onclick="copiarTexto()" class="botonesComunes botonCopiador">🄲🄾🄿🄸🄰🅁</button>
+                </div>
+        </section>
+    </main>
+    <footer>
+            <p class="textoRodapie">Felipe Puerta
+            &copy; 2024, All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
